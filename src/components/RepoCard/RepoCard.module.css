@@ -1,0 +1,92 @@
+.card {
+    width: 30%;
+    margin-right: calc(10% /2);
+    margin-bottom: 24px;
+    display: inline-block;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+}
+
+.boxRight {
+    width: 100%;
+    padding: 8px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.skeletonContainer {
+    width: 100%;
+}
+
+.card:nth-child(3n+3) {
+    margin-right: 0;
+}
+
+.contentContainer {
+    min-height: 225px;
+    display: flex
+}
+
+.leftBox {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #30363d ;
+    padding: 5px
+}
+
+.rightBox {
+    width: 100%;
+    padding: 8px;
+}
+
+@media(max-width: 1700px) {
+    .contentContainer {
+        min-height: 270px;
+    }
+}
+
+@media(max-width: 1500px) {
+    .contentContainer {
+        min-height: 300px;
+    }
+}
+
+@media(max-width: 1300px) {
+    .card {
+        width: 47.5%;
+        margin-right: 5%;
+    }
+    .card:nth-child(3n+3) {
+        margin-right: 5%;
+    }
+    .card:nth-child(2n+2) {
+        margin-right: 0;
+    }
+    .contentContainer {
+        min-height: 270px;
+    }
+}
+
+@media(max-width: 1000px) {
+    .contentContainer {
+        min-height: 300px;
+    }
+}
+
+@media(max-width:800px) {
+    .contentContainer {
+        min-height: 335px;
+    }
+}
+
+@media(max-width: 700px) {
+    .card {
+        width: 100%;
+    }
+    .contentContainer {
+        min-height: 225px;
+    }
+}

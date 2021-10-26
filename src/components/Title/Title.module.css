@@ -1,0 +1,22 @@
+.title {
+    width: 100%;
+    font-weight: 500  !important;
+    text-align: center;
+    color: #f0f6fc;
+}
+
+.container {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #161b22;
+    padding: 50px;
+    border-radius: 100px;
+}
+
+@media(min-width: 640px) {
+    .title {
+        width: unset
+    }
+}

@@ -1,0 +1,28 @@
+.gitflake {
+    border-radius: 50%;
+    position: absolute;
+    z-index: -10;
+    top: -5vh;
+    color: #c9d1d9;
+    font-size: var(--size) !important;
+  }
+  
+  @keyframes gitfall {
+    0% {
+      transform: translate3d(var(--left-start), 0, 0);
+    }
+    100% {
+      transform: translate3d(var(--left-end), calc(100vh - 64px), 0);
+    }
+  }
+  
+  @for $i from 1 through 50 {
+    .gitflake:nth-child(#{$i}) {
+      --size: #{random(25) + 10}px;
+      --left-start: #{random(20) - 10}vw;
+      --left-end: #{random(20) - 10}vw;
+      left: #{random(95)}vw;
+      animation: gitfall #{5 + random(10)}s linear infinite;
+      animation-delay: -#{random(10)}s;
+    }
+  }
