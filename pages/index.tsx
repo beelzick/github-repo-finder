@@ -30,7 +30,8 @@ const Index = () => {
             </PageContainer>
             <style jsx global>{`
                 body {
-                    overflow: hidden
+                    overflow: hidden;
+                    -webkit-overflow-scrolling: none
                 }
             `}
             </style>

@@ -1,12 +1,11 @@
 import { ApolloClient, InMemoryCache, HttpLink } from "@apollo/client";
 import { setContext } from '@apollo/client/link/context';
 
-const token = '';
+const token = process.env.NEXT_PUBLIC_GIT_TOKEN
 
-const authLink = setContext((_, { headers }: any) => {
+const authLink = setContext(() => {
     return {
         headers: {
-            ...headers,
             authorization: token ? `Bearer ${token}` : null,
         }
     }

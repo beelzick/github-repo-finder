@@ -1,2 +1,2 @@
 # zadanie-3
-Token: lib/apolloClient.ts
+Lokalizacja zmiennej: lib/apolloClient.ts
