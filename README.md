@@ -1,2 +1,2 @@
-# zadanie-3
-Lokalizacja zmiennej: lib/apolloClient.ts
+# GitHub Repo Finder
+deployed: https://github-repo-finder-sepia.vercel.app/
