@@ -1,5 +1,5 @@
 {
-  "name": "zadanie-3",
+  "name": "github-repo-finder",
   "version": "5.0.0",
   "private": true,
   "dependencies": {
@@ -31,12 +31,16 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
+    "cypress": "cypress open"
   },
   "devDependencies": {
+    "@testing-library/cypress": "^8.0.2",
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^12.1.2",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "cypress": "^9.0.0",
     "typescript": "latest"
   }
 }
